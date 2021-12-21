@@ -11,6 +11,7 @@ export interface WGOProps {
   center: Vector3;
   bbox: BBoxType;
 }
+
 const GRENS_ZONE_ZWAKKE_WEGGEBRUIKER_WCZ = 1;
 const GRENS_ONVERHARDE_ZONE_WOZ = 2;
 const RAND_VAN_DE_RIJBAAN_WRB = 3;
@@ -34,7 +35,7 @@ export const WGO: React.FC<WGOProps> = ({ center, bbox }) => {
     <>
       {center &&
         data?.features.map(({ geometry, properties, id }) => {
-          console.log(properties);
+          // console.log(properties);
           const type = properties!.TYPE!;
           const { coordinates } = geometry as LineString;
           const lines = coordinates.map(([x, z]) => new Vector3(x - center.x, 1, -z - center.z));

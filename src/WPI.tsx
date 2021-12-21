@@ -18,14 +18,11 @@ export const WPI: React.FC<WGOProps> = ({ center, bbox }) => {
     <>
       {center &&
         data?.features.map(({ geometry, properties, id }) => {
-          console.log(properties);
-          const { coordinates } = geometry as Point;
-          return (
-            <Circle
-              key={id}
-              position={[coordinates[0] - center.x, 0.1, -coordinates[1] - center.y]}
-            />
-          );
+          // console.log(properties);
+          const {
+            coordinates: [x, z],
+          } = geometry as Point;
+          return <Circle key={id} position={[x - center.x, 0.1, -z - center.y]} />;
         })}
     </>
   );

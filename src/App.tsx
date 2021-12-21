@@ -3,6 +3,9 @@ import { OrbitControls } from '@react-three/drei';
 import { Vector3 } from 'three';
 
 import { useLocation } from './hooks';
+import { ADPFeatures } from './ADP';
+import { WBN } from './WBN';
+import { GBG } from './GBG';
 import { WVB } from './WVB';
 import { WGO } from './WGO';
 import { WPI } from './WPI';
@@ -31,6 +34,9 @@ const App = () => {
         <OrbitControls target={[0, 100, 0]} />
         {center && (
           <>
+            <ADPFeatures center={center} bbox={BBOX} />
+            <WBN center={center} bbox={BBOX} />
+            <GBG center={center} bbox={BBOX} />
             <WVB center={center} bbox={BBOX} />
             <WGO center={center} bbox={BBOX} />
             <WPI center={center} bbox={BBOX} />

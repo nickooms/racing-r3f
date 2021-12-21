@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+// import { Spector } from 'spectorjs';
 // Observe a scene or a renderer
 // if (typeof __THREE_DEVTOOLS__ !== 'undefined') {
 //   __THREE_DEVTOOLS__.dispatchEvent(new CustomEvent('observe', { detail: scene }));
 //   __THREE_DEVTOOLS__.dispatchEvent(new CustomEvent('observe', { detail: renderer }));
 // }
+// const spector = new Spector();
+// spector.displayUI();
 
 ReactDOM.render(
   <React.StrictMode>
