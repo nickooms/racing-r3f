@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// import { ExtrudeScene } from './extrude-test';
+// import { PolyBoolTest } from './PolyBoolTest';
 import reportWebVitals from './reportWebVitals';
 // import { Spector } from 'spectorjs';
 // Observe a scene or a renderer
@@ -15,6 +17,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <ExtrudeScene /> */}
+    {/* <PolyBoolTest /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

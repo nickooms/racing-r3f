@@ -5,8 +5,6 @@ import { Polygon } from 'geojson';
 import { useGRB } from './wfs/use-grb';
 import { BBoxType } from './BBoxType';
 
-const LAYER = 'WBN';
-
 const KRUISPUNTZONE = 1;
 const WEGSEGMENT = 2;
 
@@ -27,7 +25,7 @@ export interface WBNProps {
 }
 
 export const WBN: React.FC<WBNProps> = ({ center, bbox }) => {
-  const { data } = useGRB({ typename: LAYER, bbox });
+  const { data } = useGRB({ typename: 'WBN', bbox });
   return (
     <>
       {center &&

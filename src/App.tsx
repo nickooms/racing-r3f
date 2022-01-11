@@ -3,17 +3,15 @@ import { OrbitControls } from '@react-three/drei';
 import { Vector3 } from 'three';
 
 import { useLocation } from './hooks';
-import { ADPFeatures } from './ADP';
-import { WBN } from './WBN';
-import { GBG } from './GBG';
-import { WVB } from './WVB';
-import { WGO } from './WGO';
-import { WPI } from './WPI';
+import * as GRB from './grb';
+// import { GBG } from './GBG';
+// import { WGO } from './WGO';
+// import { WPI } from './WPI';
 import { BBoxType } from './BBoxType';
 
 const CITY = 'Stabroek';
 const STREET = 'Markt';
-const EXPAND = 200;
+const EXPAND = 0; // 200;
 const BBOX: BBoxType = [
   152513.1 - EXPAND,
   221816.38 - EXPAND,
@@ -34,12 +32,13 @@ const App = () => {
         <OrbitControls target={[0, 100, 0]} />
         {center && (
           <>
-            <ADPFeatures center={center} bbox={BBOX} />
-            <WBN center={center} bbox={BBOX} />
-            <GBG center={center} bbox={BBOX} />
-            <WVB center={center} bbox={BBOX} />
-            <WGO center={center} bbox={BBOX} />
-            <WPI center={center} bbox={BBOX} />
+            {/* <GRB.ADPFeatures center={center} bbox={BBOX} /> */}
+            <GRB.CSGTest center={center} bbox={BBOX} />
+            {/* <GRB.WBNFeatures center={center} bbox={BBOX} /> */}
+            {/* <GRB.GBGFeatures center={center} bbox={BBOX} /> */}
+            {/* <GRB.WVBFeatures center={center} bbox={BBOX} /> */}
+            {/* <WGO center={center} bbox={BBOX} /> */}
+            {/* <WPI center={center} bbox={BBOX} /> */}
           </>
         )}
       </Canvas>
