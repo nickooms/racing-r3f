@@ -30,7 +30,7 @@ export const PolygonFeature: React.FC<PolygonFeatureProps> = ({
     <Line
       key={id}
       points={points}
-      lineWidth={3}
+      lineWidth={1}
       dashed={false}
       {...props}
       color={props.color}

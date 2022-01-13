@@ -1,9 +1,8 @@
 export * from './CSGTest';
 export * from './ADPFeatures';
 export * from './ADPFeature';
-export * from './WBNFeatures';
-export * from './WBNFeature';
-export * from './WVBFeatures';
-export * from './WVBFeature';
 export * from './GBGFeatures';
 export * from './GBGFeature';
+export * as WBN from './wbn';
+export * as WGO from './wgo';
+export * as WVB from './wvb';

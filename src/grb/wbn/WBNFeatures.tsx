@@ -1,7 +1,7 @@
 import { Feature } from 'geojson';
 import { WBNFeature } from './WBNFeature';
-import { Features, simple } from '../wfs/Features';
-import { WFSFeaturesProps, useGRB } from '../wfs';
+import { Features, simple } from '../../wfs/Features';
+import { WFSFeaturesProps, useGRB } from '../../wfs';
 
 export const WBNFeatures: React.FC<WFSFeaturesProps> = ({ center, bbox }) => {
   const { data } = useGRB({ typename: 'WBN', bbox });

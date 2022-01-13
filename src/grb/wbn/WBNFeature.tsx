@@ -1,5 +1,5 @@
-import { PolygonFeature, PolygonFeatureProps } from '../PolygonFeature';
-import { randomColor } from '../Color';
+import { PolygonFeature, PolygonFeatureProps } from '../../PolygonFeature';
+import { randomColor } from '../../Color';
 
 // Color.NAMES[Math.random(Object.entries(Color.NAMES).length)]
 // console.log(Object.keys(Color.NAMES).length);
