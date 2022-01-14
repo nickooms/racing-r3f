@@ -25,6 +25,10 @@ export class BBox {
     });
   }
 
+  toArray = () => {
+    return [this.min, this.max] as BBoxType;
+  };
+
   intersects = (points: Point[]): boolean => {
     const [minX, minY] = this.min;
     const [maxX, maxY] = this.max;
