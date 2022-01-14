@@ -9,7 +9,7 @@ import * as GRB from './grb';
 // import { WGO } from './WGO';
 // import { WPI } from './WPI';
 import { BBoxType } from './BBoxType';
-import { Leva, folder, button, useControls } from 'leva';
+// import { Leva, folder, button, useControls } from 'leva';
 import { BBox } from './BBox';
 
 const idbConfig = {
